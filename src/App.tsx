@@ -1,5 +1,7 @@
-import FastPage from "./pages/FastPage";
-import SlowPage from "./pages/SlowPage";
+import SLDFastPage from "./pages/StateLiftDown/FastPage";
+import SLDSlowPage from "./pages/StateLiftDown/SlowPage";
+import CAPSlowPage from './pages/ChilrenAsProps/SlowPage';
+
 import Divider from "./components/Divider";
 
 function App() {
@@ -21,9 +23,12 @@ function App() {
           flexWrap: "wrap",
         }}
       >
-        <SlowPage />
+        <SLDSlowPage />
         <Divider />
-        <FastPage />
+        <SLDFastPage />
+
+        <CAPSlowPage />
+
       </div>
     </>
   );

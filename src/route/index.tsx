@@ -1,7 +1,7 @@
 import { Router, Route, RootRoute } from '@tanstack/react-router';
-import FastPage from '../pages/FastPage';
+import FastPage from '../pages/StateLiftDown/SlowPage';
 import App from '../App';
-import SlowPage from '../pages/SlowPage';
+import SlowPage from '../pages/StateLiftDown/SlowPage';
 
 const rootRoute = new RootRoute();
 

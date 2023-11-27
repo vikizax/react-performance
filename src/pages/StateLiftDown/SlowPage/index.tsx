@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SlowComponent from "../../components/SlowComponent";
+import SlowComponent from "../../../components/SlowComponent";
 
 const SlowPage = () => {
   const [show, setShow] = useState(false);

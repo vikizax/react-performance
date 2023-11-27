@@ -1,4 +1,4 @@
-import SlowComponent from "../../components/SlowComponent";
+import SlowComponent from "../../../components/SlowComponent";
 import HelloWorldToggle from "./HelloWorldToggle";
 const FastPage = () => {
   return (
