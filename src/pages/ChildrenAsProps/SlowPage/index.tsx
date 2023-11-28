@@ -1,11 +1,11 @@
-import { useState, MouseEvent } from 'react'
+import { useState } from 'react';
 import SlowComponent from '../../../components/SlowComponent';
 import IWillRotateBlock from './IWillRotateBlock';
 const SlowPage = () => {
 
   const [rotateX, setRotateX] = useState(0);
 
-  const rotationHandler = (e: React.WheelEvent<HTMLDivElement>) => {
+  const rotationHandler = (_: React.WheelEvent<HTMLDivElement>) => {
     setRotateX(Math.floor(Math.random() * 360))
   }
 
@@ -14,12 +14,13 @@ const SlowPage = () => {
       style={{
         display: "flex",
         flexDirection: "column",
+        cursor: 'pointer'
       }}
       onClick={rotationHandler}
     >
       <h1>I AM SLOW!</h1>
-      <IWillRotateBlock rotationValue={rotateX} />
       <SlowComponent waitTime={600} />
+      <IWillRotateBlock rotationValue={rotateX} />
     </div>
   )
 

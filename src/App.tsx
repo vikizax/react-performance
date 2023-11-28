@@ -1,6 +1,7 @@
 import SLDFastPage from "./pages/StateLiftDown/FastPage";
 import SLDSlowPage from "./pages/StateLiftDown/SlowPage";
 import CAPSlowPage from './pages/ChildrenAsProps/SlowPage';
+import CAPFastPage from './pages/ChildrenAsProps/FastPage'
 
 import Divider from "./components/Divider";
 
@@ -28,7 +29,7 @@ function App() {
         <SLDFastPage />
 
         <CAPSlowPage />
-
+        <CAPFastPage />
       </div>
     </>
   );
