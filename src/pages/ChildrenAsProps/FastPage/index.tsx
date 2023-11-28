@@ -5,7 +5,7 @@ const FastPage = () => {
         <>
             <IWillRotateWrapper>
                 <>
-                    <h1>I AM SLOW!</h1>
+                    <h1>I AM FAST!</h1>
                     <SlowComponent waitTime={600} />
                 </>
             </IWillRotateWrapper>
