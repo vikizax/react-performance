@@ -1,6 +1,6 @@
 import SLDFastPage from "./pages/StateLiftDown/FastPage";
 import SLDSlowPage from "./pages/StateLiftDown/SlowPage";
-import CAPSlowPage from './pages/ChilrenAsProps/SlowPage';
+import CAPSlowPage from './pages/ChildrenAsProps/SlowPage';
 
 import Divider from "./components/Divider";
 
