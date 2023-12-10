@@ -19,7 +19,7 @@ const SlowPage = () => {
       onClick={rotationHandler}
     >
       <h1>I AM SLOW!</h1>
-      <SlowComponent waitTime={600} />
+      <SlowComponent waitTime={100} />
       <IWillRotateBlock rotationValue={rotateX} />
     </div>
   )

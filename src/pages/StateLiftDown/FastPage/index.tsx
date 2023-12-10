@@ -1,16 +1,16 @@
+import UITogglers from "@/components/UITogglers";
 import SlowComponent from "../../../components/SlowComponent";
-import HelloWorldToggle from "./HelloWorldToggle";
+
 const FastPage = () => {
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-      }}
+      className="flex flex-col gap-4"
     >
-      <h1>I AM FAST!</h1>
-      <SlowComponent waitTime={600} />
-      <HelloWorldToggle />
+      <h4 className="font-bold">I AM FAST!</h4>
+      <SlowComponent waitTime={180} />
+      <UITogglers title="Toggle World">
+        <h2>HELLO WORLD</h2>
+      </UITogglers>
     </div>
   );
 };

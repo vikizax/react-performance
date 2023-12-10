@@ -1,26 +1,18 @@
+import ActionButton from "@/components/ActionButton";
 import { useState } from "react";
 import SlowComponent from "../../../components/SlowComponent";
 
 const SlowPage = () => {
   const [show, setShow] = useState(false);
+
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-      }}
+      className="flex flex-col gap-4"
+      id='sld-slow'
     >
-      <h1>I AM SLOW!</h1>
-
-      <SlowComponent waitTime={600} />
-      <button
-        style={{
-          width: "fit-content",
-        }}
-        onClick={() => setShow((prev) => !prev)}
-      >
-        Toggle World
-      </button>
+      <h4 className="font-bold">I AM SLOW!</h4>
+      <SlowComponent waitTime={180} />
+      <ActionButton action={() => setShow((prev) => !prev)} label="Toggle World" />
       {show && <h2>HELLO WORLD</h2>}
     </div>
   );

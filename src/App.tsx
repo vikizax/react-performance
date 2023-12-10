@@ -1,37 +1,44 @@
-import SLDFastPage from "./pages/StateLiftDown/FastPage";
-import SLDSlowPage from "./pages/StateLiftDown/SlowPage";
-import CAPSlowPage from './pages/ChildrenAsProps/SlowPage';
-import CAPFastPage from './pages/ChildrenAsProps/FastPage'
-
-import Divider from "./components/Divider";
+import List from "./components/List";
+import Layout from "./container/Layout";
+import { sidebarNavigationData } from "./data/sidebarNavigationData";
+import { Link, Outlet } from "@tanstack/react-router";
 
 function App() {
   return (
-    <>
-      <h1
-        style={{
-          textAlign: "center",
-          textDecoration: "underline",
-        }}
-      >
-        React Re-renders and Performance🔥
-      </h1>
-      <div
-        style={{
-          display: "flex",
-          gap: "10px",
-          justifyContent: "space-evenly",
-          flexWrap: "wrap",
-        }}
-      >
-        <SLDSlowPage />
-        <Divider />
-        <SLDFastPage />
-
-        <CAPSlowPage />
-        <CAPFastPage />
-      </div>
-    </>
+    <Layout>
+      <Layout.HeaderNavigation></Layout.HeaderNavigation>
+      <Layout.SidebarNavigation>
+        <List>
+          {sidebarNavigationData.map(({ id, label, path }, idx) => (
+            <List.Item key={id}>
+              <Link
+                className="
+                  hover:underline 
+                  cursor-pointer
+                  "
+                to={path}
+                activeProps={{
+                  className: `
+                    underline 
+                    text-white
+                    text-lg
+                    font-medium
+                    `,
+                }}
+              >
+                {label}
+              </Link>
+            </List.Item>
+          ))}
+        </List>
+      </Layout.SidebarNavigation>
+      <Layout.MainContent>
+        <Outlet />
+      </Layout.MainContent>
+      <Layout.AsideContent>
+        <></>
+      </Layout.AsideContent>
+    </Layout>
   );
 }
 
