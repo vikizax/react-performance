@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@tanstack/react-router": "^0.0.1-beta.240",
+    "@uiw/codemirror-extensions-langs": "^4.21.21",
+    "@uiw/codemirror-theme-sublime": "^4.21.21",
+    "@uiw/react-codemirror": "^4.21.21",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "react": "^18.2.0",

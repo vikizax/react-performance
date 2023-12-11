@@ -12,7 +12,7 @@ export interface INavigationData {
 export const sidebarNavigationData: INavigationData[] = [
   { id: 1, label: "Lifting State Down", path: "/lift-state-down" },
   { id: 2, label: "Children As Props", path: "/children-as-props" },
-  { id: 3, label: "Settings", path: "/settings" },
+  { id: 3, label: "Render Props & Hooks Pattern", path: "/render-props-n-hooks" },
   { id: 4, label: "Logout", path: "/logout" },
   { id: 5, label: "Save", path: "/save" },
   { id: 6, label: "Undo", path: "/undo" },
