@@ -14,6 +14,7 @@ const SidebarNavigation = ({ children }: SidebarNavigationParams) => {
         overflow-y-auto
         top-[calc(3rem+1px)]
         px-2
+        scrollbar
         "
     >
       {children}

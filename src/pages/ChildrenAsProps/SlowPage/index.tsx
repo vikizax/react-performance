@@ -11,15 +11,11 @@ const SlowPage = () => {
 
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        cursor: 'pointer'
-      }}
       onClick={rotationHandler}
+      className='cursor-pointer flex flex-col gap-4 select-none w-fit'
     >
-      <h1>I AM SLOW!</h1>
-      <SlowComponent waitTime={100} />
+      <h4>I AM SLOW!</h4>
+      <SlowComponent waitTime={180} />
       <IWillRotateBlock rotationValue={rotateX} />
     </div>
   )

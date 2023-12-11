@@ -14,6 +14,8 @@ const AsideContent = ({ children }: AsideContentParams) => {
         w-[19rem] 
         overflow-y-auto
         top-[calc(3rem+1px)]
+        border-l-muted
+        border-l
         "
     >
       {children}

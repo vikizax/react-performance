@@ -5,7 +5,7 @@ interface IWillRotateWrapperParams {
     children: JSX.Element
 }
 
-const IWillRotateWrapper = ({children }: IWillRotateWrapperParams) => {
+const IWillRotateWrapper = ({ children }: IWillRotateWrapperParams) => {
     const [rotateX, setRotateX] = useState(0);
 
     const rotationHandler = (_: React.WheelEvent<HTMLDivElement>) => {
@@ -14,12 +14,7 @@ const IWillRotateWrapper = ({children }: IWillRotateWrapperParams) => {
 
     return (
         <div
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                cursor: 'pointer',
-                userSelect: 'none'
-            }}
+            className='flex flex-col cursor-pointer select-none gap-4 w-fit'
             onClick={rotationHandler}
         >
             {children}

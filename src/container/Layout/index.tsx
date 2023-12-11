@@ -12,7 +12,8 @@ const Layout = ({ children }: LayoutParams) => {
       className="
         h-[100%] 
         bg-[hsl(240,10%,3.9%)] 
-        text-muted-foreground"
+        text-muted-foreground
+        "
     >
       {children}
     </div>

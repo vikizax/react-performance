@@ -5,7 +5,7 @@ import UITogglers from "@/components/UITogglers";
 const StateLiftDown = () => {
 
   return <>
-    <h2 className="p-4">State Lift Down Demonstration</h2>
+    <h2 className="p-4 text-muted font-bold text-lg">State Lift Down Demonstration</h2>
     <div className="grid grid-cols-2">
       <div className="col-span-1 p-4">
         <UITogglers title="Show Fast!"  >

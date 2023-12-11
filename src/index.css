@@ -5,15 +5,31 @@
 @layer base {
   :root {
     --muted: 0deg 0% 98%;
-    --muted-foreground: 240deg 5% 64.9%
+    --muted-foreground: 240deg 5% 64.9%;
+    --scroll-width: 0.2rem;
   }
 }
 
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: var(--scroll-width);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground));
+    border-radius: 100svh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted));
+  }
+}
 html,
 body {
   margin: 0;
   padding: 0;
 }
+
 body {
   height: 100svh;
 }

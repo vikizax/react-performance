@@ -21,7 +21,6 @@ function App() {
                   className: `
                     underline 
                     text-white
-                    text-lg
                     font-medium
                     `,
                 }}

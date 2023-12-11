@@ -3,14 +3,12 @@ type IWillRotateBlockProps = {
 }
 
 const IWillRotateBlock = ({ rotationValue }: IWillRotateBlockProps) => {
-
-    return <div style={{
-        transform: `rotate(${rotationValue}deg)`,
-        textAlign: 'center',
-        transition: 'transform 2s',
-        userSelect: 'none',
-        width: 'fit-content'
-    }}>I rotate!</div>
+    return <div
+        style={{
+            transform: `rotate(${rotationValue}deg)`,
+        }}
+        className='text-center transition-transform duration-200 select-none w-fit transform-gpu'
+    >I rotate!</div>
 }
 
 export default IWillRotateBlock;
